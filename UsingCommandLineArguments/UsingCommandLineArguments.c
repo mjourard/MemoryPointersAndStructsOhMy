@@ -16,21 +16,22 @@ int main(int argc, char * argv[]) {
 
   int i;
 
+
+
   if (argc < 2) {
     printf("Usage: type CLA <argument1> <argument 2> .. <argumentN> to see how argument values are passed in.\nTry Using quatations (\") to pass in arguments with spaces!\n");
   } else {
 
     printf("[Index] => [Value]\n");
-    for(i=0; i<argc; i++){
+    for(i=0; i<argc; i++) {
       printf("[%d] => [%s]\n",i, argv[i]);
     }
 
   }
 
+  if (setValue(key, value) == 0) {
+    printf("There was an error storing key/value: %s/%s\n", key, value);
+  }
+
   return(0);
 }
-
-
-
-
-
