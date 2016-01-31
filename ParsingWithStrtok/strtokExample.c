@@ -11,9 +11,13 @@
 
 int main (int argc, char * argv[]){
 
+  int i;
+  char * originalHeadToString;
+  int originalStringLength;
   int tokenCount; 
   char * tokenDelimitedString;
   char * token;
+
 
   if (argc < 3) { 
     printf("Usage: enter a delimited string and the delimiter token. I.e. \"The quick brown fox jumps over the lazy dog.\" \" \"");
@@ -22,6 +26,9 @@ int main (int argc, char * argv[]){
 
     tokenDelimitedString = malloc(sizeof(char)*(strlen(argv[1]) + 1));
     strcpy(tokenDelimitedString, argv[1]);
+
+    originalHeadToString = tokenDelimitedString;
+    originalStringLength = strlen(tokenDelmitedString);
 
     printf("Original string: %s\n", tokenDelimitedString);
 
@@ -35,7 +42,10 @@ int main (int argc, char * argv[]){
       printf("token %d: %s\n", token);
     }
 
-    printf("Here is a print out of the values
+    printf("Here is a print out of the values stored in the copied string, showing how strtok has modified them.\n");
+    for (i = 0; i < originalStringLength; i++) {
+      printf("index: %d | character: %c | character value: %d\n", i, originalHeadToString[i], originalHeadToString[i]);
+    }
 
     return 0;
   }
