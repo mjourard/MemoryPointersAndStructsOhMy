@@ -19,12 +19,11 @@ For strdup, you'll notice the fourth clause is '_XOPEN_SOURCE && _XOPEN_SOURCE_E
 This means to include strdup, we had to define those two variables, such as has been done in goodStrdup.c
 
 While both the compiled executables from goodStrdup.c and badStrdup.c will run with the same output and success rates,
-it is still good practice to get rid of any compiler warnings, as well as good
+it is still good practice to get rid of compiler warnings, as well as good
 to know why warnings such as these happen.
 
 A programmer can never make the transition from good to great if they do not understand 
-the tools they use, much like a jedi can not become a master without a great knowledge of the force
-and adept skills with a light saber.
+the tools they use. 
 
 There are many other functions that have definition requirements in order to be included when being compiled with
 a c standard. Now you know what to do and how to acquire the information you need 
