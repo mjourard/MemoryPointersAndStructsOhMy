@@ -1,0 +1,15 @@
+Just some Documentation...
+
+A small limitation of the program is if you select an X or an O that is already placed on
+the board (which is cheating anyway to try to take their spot), the game will skip your turn. 
+There is also no undo function so I'm sorry to say that. 
+
+If you want to quit at any time, just press the "Q" key and you will be asked if you want to quit 
+the game. Just hit "y" for yes and you'll exit the game.
+
+In cases of there being no moves in the top row, the victory conditions won't necessarily register
+for the game, so if you win, just keep enter moves, specifically in the top left corner, and it'll
+register eventually.
+
+Enjoy
+-Matt Jourard 
